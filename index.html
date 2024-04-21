@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://chuemail.chu.edu.tw/Font/font.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="all.css">
+</head>
+
+<body>
+    <div class="take-bg"></div>
+    <div class="frame">
+        <div class="container">
+            <!-- 弹出窗口 -->
+            <div id="popup" class="popup">
+                <p>心平 妳願意成為</p>
+                <p>我女朋友嗎?</p>
+                <div class="btns">
+                    <button class="btn" onclick="closePopup(true)">好</button>
+                    <button class="btn" onclick="closePopup(false)">才不要</button>
+                </div>
+
+            </div>
+            <canvas id="mycanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="all.js"></script>
+</body>
+
+</html>

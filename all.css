@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background: #000;
+    font-family: 'Inter', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.frame {
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    /* border: 20px solid black; */
+    /* 畫框的顏色 */
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+    /* 陰影效果 */
+    /*   border-radius: 20px; */
+    padding: 1% 20px 20% 20px;
+    background: url("./Wallpaper.jpeg");
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    margin-top: 15vh;
+    /* 例如，設置高度為視窗高度的60% */
+}
+
+.take-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background: #000;
+}
+
+canvas {
+    background: #75b7e3;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* 弹出窗口样式 */
+.popup {
+    display: none;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    background: rgba(255, 255, 255, .1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 2px solid #333;
+    z-index: 9999;
+    /* 添加抖动动画效果 */
+    animation: shake 0.5s infinite alternate;
+}
+
+/* 定义抖动动画 */
+@keyframes shake {
+    0% {
+        top: 50%;
+    }
+
+    50% {
+        top: 48%;
+    }
+
+    100% {
+        top: 49%;
+    }
+}
+
+/* 按钮样式 */
+.btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+button {
+    border: 1px solid #000;
+    background: #ffff;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'cursive';
+}
