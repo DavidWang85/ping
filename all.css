@@ -148,7 +148,8 @@ table {
     /* 陰影效果 */
     /*   border-radius: 20px; */
     padding: 1% 20px 20% 20px;
-    background: url("./Wallpaper.jpeg");
+    /* background: url("./Wallpaper.jpeg"); */
+    background: #fff;
     overflow: hidden;
     position: relative;
 }
