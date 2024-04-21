@@ -248,3 +248,7 @@ table {
         font-family: 'cursive';
     }
 }
+
+.none {
+    display: none;
+}
